@@ -31,3 +31,4 @@ function initSortable() {
         placeholder: 'card-placeholder'
     }).disableSelection();
 }
+

@@ -7,6 +7,7 @@ body {
   justify-content: center;
   font-family: 'Indie Flower', cursive;
   letter-spacing: 2px;
+  background-color: #c3c3c3;
 }
 
 * {box-sizing: border-box;}
@@ -27,6 +28,7 @@ body {
   border-radius: 50%;
   text-transform: uppercase;
   font-weight: bolder;
+  font-family: initial;
 }
 
 
@@ -117,6 +119,7 @@ button {
   font-family: 'Lobster', cursive;
   letter-spacing: 2px;
   font-size: 16px;
+  background-color: #e9e9e9; 
 }
 
 .priority3 {
@@ -129,4 +132,12 @@ button {
 
 .priority1 {
   background-color: rgba(229, 27, 27, 0.4);
+}
+
+.column-name-change {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  border-radius: 3px;
 }
