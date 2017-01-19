@@ -31,6 +31,10 @@ body li {
 	justify-content: flex-end;
 }
 
+body li:hover {
+	text-decoration: underline;
+}
+
 body ul{
 	width: 550px;
 	justify-content: center;
@@ -44,6 +48,10 @@ body img {
 
 i {
 	margin: 0 5px;
+}
+
+#miniflag {
+	margin-right: 10px;
 }
 
 button {
@@ -84,3 +92,4 @@ input {
 	text-shadow:4px 0px 0px rgba(42,42,42,.75);
 	outline: none;
 }
+

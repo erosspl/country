@@ -16,13 +16,12 @@ function searchCountries() {
 function showCountriesList(resp) {
   $('#body img:last-child').remove();
   countriesList.empty();
+
   resp.forEach(function(item){
     if (resp.length !== 1) {
       var myLi = document.createElement('li');
-      myLi.innerHTML = 'Country:' + ' ' + item.name + '<img id="miniflag">';
+      myLi.innerHTML = 'Country:' + ' ' + item.name +'<img src="http://icons.iconarchive.com/icons/osiris/world-flags/16/00-cctld-'+ item.alpha2Code.toLowerCase() + '-icon.png" id="miniflag">';
       countriesList.append(myLi);
-      $('img').addClass('flag flag-' + item.alpha2Code.toLowerCase());
-      console.log(item.alpha2Code);  
       myLi.addEventListener('click', function(event) {
         countriesList.empty();
         $('<li>').text('Country and capital city: ' + item.name + ', ' + item.capital).appendTo(countriesList).append($('<i class="fa fa-building" aria-hidden="true"></i>'));
