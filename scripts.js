@@ -19,8 +19,10 @@ function showCountriesList(resp) {
   resp.forEach(function(item){
     if (resp.length !== 1) {
       var myLi = document.createElement('li');
-      myLi.innerHTML = 'Country:' + ' ' + item.name;
+      myLi.innerHTML = 'Country:' + ' ' + item.name + '<img id="miniflag">';
       countriesList.append(myLi);
+      $('img').addClass('flag flag-' + item.alpha2Code.toLowerCase());
+      console.log(item.alpha2Code);  
       myLi.addEventListener('click', function(event) {
         countriesList.empty();
         $('<li>').text('Country and capital city: ' + item.name + ', ' + item.capital).appendTo(countriesList).append($('<i class="fa fa-building" aria-hidden="true"></i>'));
