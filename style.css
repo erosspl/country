@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	background-image: url("http://www.pageresource.com/wallpapers/wallpaper/download-earth-backgrounds.jpg");
+	background-position-y: -150px;
+	color: white;
+	font-family: 'Arsenal', sans-serif;
+	letter-spacing: 2px;
+	padding-left: 20px;
+}
+
+body h1 {
+	width: 100%;
+	font-size: 45px;
+	text-align: center;
+}
+
+body h2 {
+	width: 550px;
+	text-align: center;
+}
+
+body li {
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+body li:hover {
+	text-decoration: underline;
+}
+
+body ul{
+	width: 550px;
+	justify-content: center;
+}
+
+body img {
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	border: 0.5px solid white;
+}
+
+i {
+	margin: 0 5px;
+}
+
+#miniflag {
+	margin-right: 10px;
+}
+
+button {
+	width: 237px;
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+	outline: none;	
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+input {
+	border-color:#cccccc; 
+	border-style:solid; 
+	padding:9px; 
+	font-size:18px; 
+	border-width:0px; 
+	border-radius:13px; 
+	background-color:#383838; 
+	color:#ffffff; 
+	text-shadow:4px 0px 0px rgba(42,42,42,.75);
+	outline: none;
+}
+
