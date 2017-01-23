@@ -31,13 +31,12 @@ function showCountriesList(resp) {
     })
   }  
   else {
-    resp.forEach(function(item) {  
-        countriesList.empty();
-        $('<li>').text('Country and capital city: ' + item.name + ', ' + item.capital).appendTo(countriesList).append($('<i class="fa fa-building" aria-hidden="true"></i>'));
-        $('<li>').text('Common languages used: ' + item.languages).appendTo(countriesList).append($('<i class="fa fa-commenting-o" aria-hidden="true"></i>'));
-        $('<li>').text('Population: ' + item.population).appendTo(countriesList).append($('<i class="fa fa-users" aria-hidden="true"></i>'));
-        $('#body').append('<img id="flag" src="http://flags.fmcdn.net/data/flags/normal/' + item.alpha2Code.toLowerCase() + '.png" alt="no flag available">');  
-    })
+    var item = resp[0];
+    countriesList.empty();
+    $('<li>').text('Country and capital city: ' + item.name + ', ' + item.capital).appendTo(countriesList).append($('<i class="fa fa-building" aria-hidden="true"></i>'));
+    $('<li>').text('Common languages used: ' + item.languages).appendTo(countriesList).append($('<i class="fa fa-commenting-o" aria-hidden="true"></i>'));
+    $('<li>').text('Population: ' + item.population).appendTo(countriesList).append($('<i class="fa fa-users" aria-hidden="true"></i>'));
+    $('#body').append('<img id="flag" src="http://flags.fmcdn.net/data/flags/normal/' + item.alpha2Code.toLowerCase() + '.png" alt="no flag available">');  
   }
 }
 
